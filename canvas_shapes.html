@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>
+        Shapes using canvas
+    </title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1000" height="1000">
+    </canvas>
+</body>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.moveTo(250, 40);
+    ctx.lineTo(450, 40);
+    ctx.lineTo(450, 100);
+    ctx.lineTo(250, 100);
+    ctx.lineTo(250, 40);
+    ctx.stroke();
+    ctx.moveTo(550, 40);
+    ctx.lineTo(750, 40);
+    ctx.lineTo(750, 240);
+    ctx.lineTo(550, 240);
+    ctx.lineTo(550, 40);
+    ctx.stroke();
+</script>
+
+</html>
